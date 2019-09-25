@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react';
 import { SearchBar } from 'react-native-elements';
 
 
@@ -13,7 +13,7 @@ export default class Search extends Component {
     };
 
     onSubmitEditing = () =>{
-        alert("button clicked") 
+        this.props.onSubmitEditing(this.state.term);
         
     };
     render() {
